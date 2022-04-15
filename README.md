@@ -1,6 +1,10 @@
 # rascal-lsp-java-test
 
-Trying to figure out why Rascal cannot find Java bindings
+Trying to figure out why Rascal cannot find Java bindings. In the Eclipse environment, this was handled by adding to the classpath:
+```xml
+	<classpathentry kind="lib" path="lib/frink.jar"/>
+	<classpathentry kind="lib" path="lib/fuzzywuzzy-1.3.0.jar"/>
+```
 
 ## RASCAL.MF
 - Not sure what the `Courses: courses` line is for
@@ -10,7 +14,7 @@ Trying to figure out why Rascal cannot find Java bindings
 1. `code .` to open this repository in vscode
 2. Open the file `src/FuzzyWuzzy.rsc` and click `Import in new Rascal terminal`
 3. Rascal terminal output reads:
-```
+```java
 INFO: detected |lib://rascal-lsp| at |jar+file:///Users/auke/.vscode/extensions/usethesource.rascalmpl-0.2.0/assets/jars/rascal-lsp.jar!/|
 INFO: detected |lib://rascal| at |jar+file:///Users/auke/.vscode/extensions/usethesource.rascalmpl-0.2.0/assets/jars/rascal.jar!/|
 WARNING: could not resolve dependency on: |lib://rascal-core/| because it does not seem to exist as a project or a library.
