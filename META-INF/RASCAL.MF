@@ -1,0 +1,7 @@
+Manifest-Version: 0.0.1
+Main-Function: main
+Courses: courses
+Project-Name: corel
+Require-Libraries: |lib://rascal-core/|
+Main-Module: VSMain
+Source: src
